@@ -1,7 +1,8 @@
+import { uuid } from "drizzle-orm/pg-core";
 import db from "..";
 import { advocates } from "../schema";
-
-const specialties = [
+// Let's set up a simple postgresql db with prisma and have it seeded with this data
+export const specialties = [
   "Bipolar",
   "LGBTQ",
   "Medication/Prescribing",
@@ -39,6 +40,7 @@ const randomSpecialty = () => {
 
 const advocateData = [
   {
+    id: uuid("id"),
     firstName: "John",
     lastName: "Doe",
     city: "New York",
@@ -48,6 +50,7 @@ const advocateData = [
     phoneNumber: 5551234567,
   },
   {
+    id: uuid("id"),
     firstName: "Jane",
     lastName: "Smith",
     city: "Los Angeles",
@@ -57,6 +60,7 @@ const advocateData = [
     phoneNumber: 5559876543,
   },
   {
+    id: uuid("id"),
     firstName: "Alice",
     lastName: "Johnson",
     city: "Chicago",
@@ -66,6 +70,7 @@ const advocateData = [
     phoneNumber: 5554567890,
   },
   {
+    id: uuid("id"),
     firstName: "Michael",
     lastName: "Brown",
     city: "Houston",
@@ -75,6 +80,7 @@ const advocateData = [
     phoneNumber: 5556543210,
   },
   {
+    id: uuid("id"),
     firstName: "Emily",
     lastName: "Davis",
     city: "Phoenix",
@@ -84,6 +90,7 @@ const advocateData = [
     phoneNumber: 5553210987,
   },
   {
+    id: uuid("id"),
     firstName: "Chris",
     lastName: "Martinez",
     city: "Philadelphia",
@@ -93,6 +100,7 @@ const advocateData = [
     phoneNumber: 5557890123,
   },
   {
+    id: uuid("id"),
     firstName: "Jessica",
     lastName: "Taylor",
     city: "San Antonio",
@@ -102,6 +110,7 @@ const advocateData = [
     phoneNumber: 5554561234,
   },
   {
+    id: uuid("id"),
     firstName: "David",
     lastName: "Harris",
     city: "San Diego",
@@ -111,6 +120,7 @@ const advocateData = [
     phoneNumber: 5557896543,
   },
   {
+    id: uuid("id"),
     firstName: "Laura",
     lastName: "Clark",
     city: "Dallas",
@@ -120,6 +130,7 @@ const advocateData = [
     phoneNumber: 5550123456,
   },
   {
+    id: uuid("id"),
     firstName: "Daniel",
     lastName: "Lewis",
     city: "San Jose",
@@ -129,6 +140,7 @@ const advocateData = [
     phoneNumber: 5553217654,
   },
   {
+    id: uuid("id"),
     firstName: "Sarah",
     lastName: "Lee",
     city: "Austin",
@@ -138,6 +150,7 @@ const advocateData = [
     phoneNumber: 5551238765,
   },
   {
+    id: uuid("id"),
     firstName: "James",
     lastName: "King",
     city: "Jacksonville",
@@ -147,6 +160,7 @@ const advocateData = [
     phoneNumber: 5556540987,
   },
   {
+    id: uuid("id"),
     firstName: "Megan",
     lastName: "Green",
     city: "San Francisco",
@@ -156,6 +170,7 @@ const advocateData = [
     phoneNumber: 5559873456,
   },
   {
+    id: uuid("id"),
     firstName: "Joshua",
     lastName: "Walker",
     city: "Columbus",
@@ -165,6 +180,7 @@ const advocateData = [
     phoneNumber: 5556781234,
   },
   {
+    id: uuid("id"),
     firstName: "Amanda",
     lastName: "Hall",
     city: "Fort Worth",
